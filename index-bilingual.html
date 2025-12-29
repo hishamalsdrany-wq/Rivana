@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title data-i18n="title">Rivana Tech | Maritime Innovation & Technology</title>
+  <meta name="description" content="Rivana Tech builds smart maritime systems: fleet management, smart marinas, SCADA & IoT integration, and Marine CRM/ERP." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <!-- Minimal overrides for bilingual + RTL support (keeps your original design) -->
+  <style>
+    .lang-switch { display:flex; gap:10px; align-items:center; margin-inline-start:14px; }
+    .lang-btn{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.14);
+      background:rgba(255,255,255,.06);
+      color:inherit; cursor:pointer; user-select:none;
+      font-weight:700; font-size:13px;
+      transition:transform .12s ease, background .12s ease, border-color .12s ease;
+      white-space:nowrap;
+    }
+    .lang-btn:hover{ transform: translateY(-1px); background:rgba(255,255,255,.10); border-color:rgba(255,255,255,.22); }
+    .lang-btn.active{ border-color: rgba(56,189,248,.45); background: rgba(56,189,248,.12); }
+    .flag{ font-size:16px; line-height:1; }
+    html[dir="rtl"] body { direction: rtl; }
+    html[dir="rtl"] .menu { direction: rtl; }
+    html[dir="rtl"] .cards ul { padding-right: 18px; padding-left: 0; }
+    html[dir="rtl"] .careers ul { padding-right: 18px; padding-left: 0; }
+    html[dir="rtl"] .brand span { letter-spacing: 0; }
+  </style>
+</head>
+
+<body>
+  <header class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a class="brand" href="#home" data-scroll>
+          <img src="assets/rivana-logo.jpeg" alt="Rivana logo" />
+          <span data-i18n="brand">RIVANA</span>
+        </a>
+
+        <nav class="menu" aria-label="Primary">
+          <a href="#about" data-scroll data-i18n="nav.about">About</a>
+          <a href="#services" data-scroll data-i18n="nav.services">Services</a>
+          <a href="#market" data-scroll data-i18n="nav.market">Market</a>
+          <a href="#careers" data-scroll data-i18n="nav.careers">Careers</a>
+          <a href="#contact" data-scroll data-i18n="nav.contact">Contact</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn" href="#careers" data-scroll data-i18n="cta.openings">View Openings</a>
+          <a class="btn primary" href="#apply" data-scroll data-i18n="cta.apply">Apply Now</a>
+        </div>
+
+        <!-- Language Switcher -->
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn" id="langAr" type="button" data-lang="ar" title="العربية">
+            <span class="flag" aria-hidden="true">🇸🇦</span><span>العربية</span>
+          </button>
+          <button class="lang-btn" id="langEn" type="button" data-lang="en" title="English">
+            <span class="flag" aria-hidden="true">🇬🇧</span><span>English</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <section>
+          <div class="kicker"><span class="dot"></span> <span data-i18n="hero.kicker">Maritime Innovation & Technology</span></div>
+          <h1 data-i18n="hero.h1">Let’s Innovate the Sea.</h1>
+          <p class="sub" data-i18n="hero.sub">
+            Rivana Tech is a Saudi company specialized in building smart maritime systems and applications.
+            We empower fleet operators, marinas, and maritime businesses to run safer and more efficient operations
+            through automation, intelligent analytics, and data-driven management.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#services" data-scroll data-i18n="hero.explore">Explore Services</a>
+            <a class="btn" href="#about" data-scroll data-i18n="hero.who">Who We Are</a>
+            <a class="btn" href="#careers" data-scroll data-i18n="hero.careers">Careers</a>
+          </div>
+        </section>
+
+        <aside class="panel port" aria-label="Highlights">
+          <div>
+            <div class="title" data-i18n="panel.title">Built for modern maritime operations</div>
+            <div class="badges">
+              <span class="badge" data-i18n="panel.badge1">Automation</span>
+              <span class="badge" data-i18n="panel.badge2">AI Analytics</span>
+              <span class="badge" data-i18n="panel.badge3">SCADA + IoT</span>
+              <span class="badge" data-i18n="panel.badge4">Marine ERP/CRM</span>
+              <span class="badge" data-i18n="panel.badge5">Safety-first</span>
+            </div>
+          </div>
+          <div class="note" data-i18n="panel.note">
+            Visual identity uses Rivana’s neon blue/cyan/purple gradient on a navy background.
+          </div>
+        </aside>
+      </div>
+    </div>
+    <img class="wave" src="assets/wave.svg" alt="" />
+  </main>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2 data-i18n="about.h2">About Rivana</h2>
+      <p class="lead" data-i18n="about.lead">
+        We combine maritime know-how with advanced technology to transform day-to-day marine operations into
+        smarter, safer, and more efficient workflows.
+      </p>
+
+      <div class="split">
+        <div class="card">
+          <h3 data-i18n="about.vision.h3">Vision</h3>
+          <p class="lead" data-i18n="about.vision.p">
+            To become the leading provider of innovative maritime technology solutions in the Kingdom and globally.
+          </p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="about.mission.h3">Mission</h3>
+          <p class="lead" data-i18n="about.mission.p">
+            To deliver integrated, technology-driven maritime services that enhance safety, efficiency, and customer satisfaction.
+          </p>
+        </div>
+      </div>
+
+      <div class="cards" style="margin-top:16px">
+        <div class="card">
+          <h3 data-i18n="about.values.h3">Our Values</h3>
+          <ul>
+            <li data-i18n="about.values.li1"><b>Innovation</b> — We use technology to unlock smarter maritime operations.</li>
+            <li data-i18n="about.values.li2"><b>Excellence</b> — We pursue high standards in quality, performance, and delivery.</li>
+            <li data-i18n="about.values.li3"><b>Safety</b> — People, customers, and the marine environment are at the core of every operation.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-i18n="about.what.h3">What we do</h3>
+          <ul>
+            <li data-i18n="about.what.li1">End-to-end digital solutions for fleets, marinas, and marine businesses.</li>
+            <li data-i18n="about.what.li2">Real-time monitoring, automation, and analytics dashboards.</li>
+            <li data-i18n="about.what.li3">Operational visibility and better decision-making through data.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <h2 data-i18n="services.h2">Our Services</h2>
+      <p class="lead" data-i18n="services.lead">From sea to system — comprehensive services that merge maritime expertise with advanced technology.</p>
+
+      <div class="cards">
+        <article class="card">
+          <h3 data-i18n="services.s1.h3">Smart Fleet Management System</h3>
+          <ul>
+            <li data-i18n="services.s1.li1">Real-time monitoring of vessels and assets to improve operational efficiency.</li>
+            <li data-i18n="services.s1.li2">Fuel consumption tracking and preventive maintenance scheduling to reduce costs.</li>
+            <li data-i18n="services.s1.li3">Safety alerts for speed, routes, and anomalies.</li>
+            <li data-i18n="services.s1.li4">Remote control & monitoring via digital systems (e.g., SCADA) and live dashboards.</li>
+            <li data-i18n="services.s1.li5">AI-assisted analytics and recommendations to optimize performance.</li>
+            <li data-i18n="services.s1.li6">Compliance support aligned with local and international quality & safety requirements.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 data-i18n="services.s2.h3">Smart Marina Management</h3>
+          <ul>
+            <li data-i18n="services.s2.li1">Live berth availability and occupancy tracking to reduce congestion.</li>
+            <li data-i18n="services.s2.li2">Automated onboarding, e-permits, and digital payments.</li>
+            <li data-i18n="services.s2.li3">Utilities & resource monitoring per berth (water, electricity, fuel).</li>
+            <li data-i18n="services.s2.li4">User apps for reservations, payments, alerts, and service requests.</li>
+            <li data-i18n="services.s2.li5">Environmental capabilities (waste management insights & water-quality monitoring).</li>
+            <li data-i18n="services.s2.li6">Security: sensors, CCTV integration, GPS tracking, and centralized control.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 data-i18n="services.s3.h3">SCADA Integration & IoT</h3>
+          <ul>
+            <li data-i18n="services.s3.li1">Real-time data collection from sensors and field equipment.</li>
+            <li data-i18n="services.s3.li2">Remote operations: start/stop systems from anywhere via cloud interfaces.</li>
+            <li data-i18n="services.s3.li3">Lower field-visit needs and faster incident response.</li>
+            <li data-i18n="services.s3.li4">Energy, water, and fuel optimization to reduce waste.</li>
+            <li data-i18n="services.s3.li5">Early-warning safety systems (leak, overheating, power loss).</li>
+            <li data-i18n="services.s3.li6">Integration-ready with ERP/CRM and unified dashboards.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 data-i18n="services.s4.h3">Marine CRM / ERP</h3>
+          <ul>
+            <li data-i18n="services.s4.li1">Unified platform connecting procurement, ops, maintenance, finance, HR, and fleet data.</li>
+            <li data-i18n="services.s4.li2">Client journey tracking: bookings, invoices, preferences, service history, satisfaction.</li>
+            <li data-i18n="services.s4.li3">Automation to reduce manual work and improve data accuracy.</li>
+            <li data-i18n="services.s4.li4">Preventive maintenance tracking and spare-parts inventory management.</li>
+            <li data-i18n="services.s4.li5">Financial transparency: real-time reports, budgets, e-payments, and bank integrations.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="market" class="section">
+    <div class="container">
+      <h2 data-i18n="market.h2">Market & Growth</h2>
+      <p class="lead" data-i18n="market.lead">
+        We are positioned to support the region’s rapidly growing coastal and maritime ecosystem with digital-first solutions.
+      </p>
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="market.opp.h3">Opportunities</h3>
+          <ul>
+            <li data-i18n="market.opp.li1">Growing demand for coastal tourism, water sports, and waterfront projects.</li>
+            <li data-i18n="market.opp.li2">Rising need for safe, efficient, and compliant marine operations.</li>
+            <li data-i18n="market.opp.li3">Digital transformation of fleets, marinas, and maritime service providers.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 data-i18n="market.value.h3">Value to the sector</h3>
+          <ul>
+            <li data-i18n="market.value.li1">Higher customer satisfaction through professional communication and fast response.</li>
+            <li data-i18n="market.value.li2">Continuous attraction, development, and training of talent.</li>
+            <li data-i18n="market.value.li3">Expansion of digital services into adjacent industries beyond maritime.</li>
+            <li data-i18n="market.value.li4">Strategic partnerships with public and private institutions supporting Vision 2030.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="careers" class="section">
+    <div class="container">
+      <h2 data-i18n="careers.h2">Careers</h2>
+      <p class="lead" data-i18n="careers.lead">
+        Join us in shaping the future of maritime technology. We’re building a team that values innovation, excellence, and safety.
+      </p>
+
+      <div class="careers">
+        <div class="job">
+          <h3 data-i18n="careers.job.h3">Administrative Assistant</h3>
+          <div class="meta">
+            <span data-i18n="careers.job.meta1">Full-time</span>
+            <span data-i18n="careers.job.meta2">Open Position</span>
+            <span data-i18n="careers.job.meta3">Location: Abu Dhabi (On-site)</span>
+          </div>
+          <hr class="sep"/>
+          <p class="lead" style="margin:0 0 10px" data-i18n="careers.job.kr">Key Responsibilities</p>
+          <ul style="color:var(--muted); line-height:1.7; margin:0; padding-left:18px">
+            <li data-i18n="careers.job.li1">Manage daily administrative operations.</li>
+            <li data-i18n="careers.job.li2">Coordinate schedules and meetings.</li>
+            <li data-i18n="careers.job.li3">Handle emails, documents, and reports.</li>
+            <li data-i18n="careers.job.li4">Support management with office tasks.</li>
+            <li data-i18n="careers.job.li5">Maintain organized records and files.</li>
+          </ul>
+          <div class="hero-actions" style="margin-top:14px">
+            <button class="btn primary" id="applyBtn" type="button" data-i18n="careers.job.applybtn">Apply Now</button>
+            <a class="btn" href="#apply" data-scroll data-i18n="careers.job.goto">Go to Application Form</a>
+          </div>
+          <p class="note" style="margin-top:10px" data-i18n="careers.job.tip">
+            Tip: Once you publish this site, you can print the URL or a QR code in your Instagram post.
+          </p>
+        </div>
+
+        <div id="apply" class="form">
+          <h3 style="margin:0 0 8px" data-i18n="apply.h3">Apply now via the link</h3>
+          <p class="note" style="margin:0 0 12px" data-i18n="apply.note">
+            This form supports file upload. To activate submissions, paste your free form endpoint in the HTML (instructions included in README).
+          </p>
+
+          <form action="ACTION_URL" method="POST" enctype="multipart/form-data">
+            <label for="fullName" data-i18n="apply.fullName">Full Name</label>
+            <input id="fullName" name="fullName" type="text" required placeholder="Your full name" data-i18n-placeholder="apply.fullNamePh"/>
+
+            <label for="email" data-i18n="apply.email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="name@example.com" data-i18n-placeholder="apply.emailPh"/>
+
+            <label for="phone" data-i18n="apply.phone">Phone Number</label>
+            <input id="phone" name="phone" type="tel" required placeholder="+971 ..." data-i18n-placeholder="apply.phonePh"/>
+
+            <label for="position" data-i18n="apply.position">Position Applied For</label>
+            <select id="position" name="position" required>
+              <option value="" disabled selected data-i18n="apply.select">Select a position</option>
+              <option data-i18n="apply.opt1">Administrative Assistant</option>
+            </select>
+
+            <label for="cv" data-i18n="apply.cv">Upload CV</label>
+            <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" required />
+            <small class="help" data-i18n="apply.help">Accepted formats: PDF, DOC, DOCX</small>
+
+            <label for="message" data-i18n="apply.msg">Message (Optional)</label>
+            <textarea id="message" name="message" placeholder="Tell us briefly about your experience." data-i18n-placeholder="apply.msgPh"></textarea>
+
+            <div class="hero-actions" style="margin-top:14px">
+              <button class="btn primary" type="submit" data-i18n="apply.submit">Submit Application</button>
+              <a class="btn" href="#contact" data-scroll data-i18n="apply.contact">Contact Us</a>
+            </div>
+          </form>
+
+          <p class="note" style="margin-top:12px">
+            <span data-i18n="apply.route">Applications will be routed to:</span> <b>info@rivana.com</b>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 data-i18n="contact.h2">Contact</h2>
+      <p class="lead" data-i18n="contact.lead">For partnerships, demos, or support — reach us anytime.</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3 data-i18n="contact.email.h3">Email</h3>
+          <p class="lead" style="margin:0"><a href="mailto:info@rivana.com">info@rivana.com</a></p>
+          <p class="note" data-i18n="contact.email.note">Primary inbox for general inquiries and recruitment.</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="contact.phone.h3">Phone</h3>
+          <p class="lead" style="margin:0"><a href="tel:+966541229175">+966 54 122 9175</a></p>
+          <p class="note" data-i18n="contact.phone.note">Business hours (GCC).</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="contact.web.h3">Website</h3>
+          <p class="lead" style="margin:0"><a href="https://www.rivana.com" target="_blank" rel="noopener">www.rivana.com</a></p>
+          <p class="note" data-i18n="contact.web.note">Public site (this page).</p>
+        </div>
+        <div class="card">
+          <h3 data-i18n="contact.loc.h3">Location</h3>
+          <p class="lead" style="margin:0" data-i18n="contact.loc.p">Abu Dhabi, UAE</p>
+          <p class="note" data-i18n="contact.loc.note">Recruitment role is listed as on-site in Abu Dhabi.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <b data-i18n="footer.brand">RIVANA</b><br/>
+          <span class="note" data-i18n="footer.tag">Maritime Innovation & Technology</span>
+        </div>
+        <div class="note">
+          © <span id="y"></span> <span data-i18n="footer.rights">Rivana. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // keep your original year logic
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // i18n
+    const I18N = {
+      en: {
+        title: "Rivana Tech | Maritime Innovation & Technology",
+        brand: "RIVANA",
+        "nav.about":"About",
+        "nav.services":"Services",
+        "nav.market":"Market",
+        "nav.careers":"Careers",
+        "nav.contact":"Contact",
+        "cta.openings":"View Openings",
+        "cta.apply":"Apply Now",
+        "hero.kicker":"Maritime Innovation & Technology",
+        "hero.h1":"Let’s Innovate the Sea.",
+        "hero.sub":"Rivana Tech is a Saudi company specialized in building smart maritime systems and applications. We empower fleet operators, marinas, and maritime businesses to run safer and more efficient operations through automation, intelligent analytics, and data-driven management.",
+        "hero.explore":"Explore Services",
+        "hero.who":"Who We Are",
+        "hero.careers":"Careers",
+        "panel.title":"Built for modern maritime operations",
+        "panel.badge1":"Automation",
+        "panel.badge2":"AI Analytics",
+        "panel.badge3":"SCADA + IoT",
+        "panel.badge4":"Marine ERP/CRM",
+        "panel.badge5":"Safety-first",
+        "panel.note":"Visual identity uses Rivana’s neon blue/cyan/purple gradient on a navy background.",
+        "about.h2":"About Rivana",
+        "about.lead":"We combine maritime know-how with advanced technology to transform day-to-day marine operations into smarter, safer, and more efficient workflows.",
+        "about.vision.h3":"Vision",
+        "about.vision.p":"To become the leading provider of innovative maritime technology solutions in the Kingdom and globally.",
+        "about.mission.h3":"Mission",
+        "about.mission.p":"To deliver integrated, technology-driven maritime services that enhance safety, efficiency, and customer satisfaction.",
+        "about.values.h3":"Our Values",
+        "about.values.li1":"<b>Innovation</b> — We use technology to unlock smarter maritime operations.",
+        "about.values.li2":"<b>Excellence</b> — We pursue high standards in quality, performance, and delivery.",
+        "about.values.li3":"<b>Safety</b> — People, customers, and the marine environment are at the core of every operation.",
+        "about.what.h3":"What we do",
+        "about.what.li1":"End-to-end digital solutions for fleets, marinas, and marine businesses.",
+        "about.what.li2":"Real-time monitoring, automation, and analytics dashboards.",
+        "about.what.li3":"Operational visibility and better decision-making through data.",
+        "services.h2":"Our Services",
+        "services.lead":"From sea to system — comprehensive services that merge maritime expertise with advanced technology.",
+        "services.s1.h3":"Smart Fleet Management System",
+        "services.s1.li1":"Real-time monitoring of vessels and assets to improve operational efficiency.",
+        "services.s1.li2":"Fuel consumption tracking and preventive maintenance scheduling to reduce costs.",
+        "services.s1.li3":"Safety alerts for speed, routes, and anomalies.",
+        "services.s1.li4":"Remote control & monitoring via digital systems (e.g., SCADA) and live dashboards.",
+        "services.s1.li5":"AI-assisted analytics and recommendations to optimize performance.",
+        "services.s1.li6":"Compliance support aligned with local and international quality & safety requirements.",
+        "services.s2.h3":"Smart Marina Management",
+        "services.s2.li1":"Live berth availability and occupancy tracking to reduce congestion.",
+        "services.s2.li2":"Automated onboarding, e-permits, and digital payments.",
+        "services.s2.li3":"Utilities & resource monitoring per berth (water, electricity, fuel).",
+        "services.s2.li4":"User apps for reservations, payments, alerts, and service requests.",
+        "services.s2.li5":"Environmental capabilities (waste management insights & water-quality monitoring).",
+        "services.s2.li6":"Security: sensors, CCTV integration, GPS tracking, and centralized control.",
+        "services.s3.h3":"SCADA Integration & IoT",
+        "services.s3.li1":"Real-time data collection from sensors and field equipment.",
+        "services.s3.li2":"Remote operations: start/stop systems from anywhere via cloud interfaces.",
+        "services.s3.li3":"Lower field-visit needs and faster incident response.",
+        "services.s3.li4":"Energy, water, and fuel optimization to reduce waste.",
+        "services.s3.li5":"Early-warning safety systems (leak, overheating, power loss).",
+        "services.s3.li6":"Integration-ready with ERP/CRM and unified dashboards.",
+        "services.s4.h3":"Marine CRM / ERP",
+        "services.s4.li1":"Unified platform connecting procurement, ops, maintenance, finance, HR, and fleet data.",
+        "services.s4.li2":"Client journey tracking: bookings, invoices, preferences, service history, satisfaction.",
+        "services.s4.li3":"Automation to reduce manual work and improve data accuracy.",
+        "services.s4.li4":"Preventive maintenance tracking and spare-parts inventory management.",
+        "services.s4.li5":"Financial transparency: real-time reports, budgets, e-payments, and bank integrations.",
+        "market.h2":"Market & Growth",
+        "market.lead":"We are positioned to support the region’s rapidly growing coastal and maritime ecosystem with digital-first solutions.",
+        "market.opp.h3":"Opportunities",
+        "market.opp.li1":"Growing demand for coastal tourism, water sports, and waterfront projects.",
+        "market.opp.li2":"Rising need for safe, efficient, and compliant marine operations.",
+        "market.opp.li3":"Digital transformation of fleets, marinas, and maritime service providers.",
+        "market.value.h3":"Value to the sector",
+        "market.value.li1":"Higher customer satisfaction through professional communication and fast response.",
+        "market.value.li2":"Continuous attraction, development, and training of talent.",
+        "market.value.li3":"Expansion of digital services into adjacent industries beyond maritime.",
+        "market.value.li4":"Strategic partnerships with public and private institutions supporting Vision 2030.",
+        "careers.h2":"Careers",
+        "careers.lead":"Join us in shaping the future of maritime technology. We’re building a team that values innovation, excellence, and safety.",
+        "careers.job.h3":"Administrative Assistant",
+        "careers.job.meta1":"Full-time",
+        "careers.job.meta2":"Open Position",
+        "careers.job.meta3":"Location: Abu Dhabi (On-site)",
+        "careers.job.kr":"Key Responsibilities",
+        "careers.job.li1":"Manage daily administrative operations.",
+        "careers.job.li2":"Coordinate schedules and meetings.",
+        "careers.job.li3":"Handle emails, documents, and reports.",
+        "careers.job.li4":"Support management with office tasks.",
+        "careers.job.li5":"Maintain organized records and files.",
+        "careers.job.applybtn":"Apply Now",
+        "careers.job.goto":"Go to Application Form",
+        "careers.job.tip":"Tip: Once you publish this site, you can print the URL or a QR code in your Instagram post.",
+        "apply.h3":"Apply now via the link",
+        "apply.note":"This form supports file upload. To activate submissions, paste your free form endpoint in the HTML (instructions included in README).",
+        "apply.fullName":"Full Name",
+        "apply.fullNamePh":"Your full name",
+        "apply.email":"Email",
+        "apply.emailPh":"name@example.com",
+        "apply.phone":"Phone Number",
+        "apply.phonePh":"+971 ...",
+        "apply.position":"Position Applied For",
+        "apply.select":"Select a position",
+        "apply.opt1":"Administrative Assistant",
+        "apply.cv":"Upload CV",
+        "apply.help":"Accepted formats: PDF, DOC, DOCX",
+        "apply.msg":"Message (Optional)",
+        "apply.msgPh":"Tell us briefly about your experience.",
+        "apply.submit":"Submit Application",
+        "apply.contact":"Contact Us",
+        "apply.route":"Applications will be routed to:",
+        "contact.h2":"Contact",
+        "contact.lead":"For partnerships, demos, or support — reach us anytime.",
+        "contact.email.h3":"Email",
+        "contact.email.note":"Primary inbox for general inquiries and recruitment.",
+        "contact.phone.h3":"Phone",
+        "contact.phone.note":"Business hours (GCC).",
+        "contact.web.h3":"Website",
+        "contact.web.note":"Public site (this page).",
+        "contact.loc.h3":"Location",
+        "contact.loc.p":"Abu Dhabi, UAE",
+        "contact.loc.note":"Recruitment role is listed as on-site in Abu Dhabi.",
+        "footer.brand":"RIVANA",
+        "footer.tag":"Maritime Innovation & Technology",
+        "footer.rights":"Rivana. All rights reserved."
+      },
+
+      ar: {
+        title: "ريفانا تك | ابتكار وتقنية بحرية",
+        brand: "RIVANA",
+        "nav.about":"عن ريفانا",
+        "nav.services":"الخدمات",
+        "nav.market":"السوق والنمو",
+        "nav.careers":"الوظائف",
+        "nav.contact":"التواصل",
+        "cta.openings":"عرض الوظائف",
+        "cta.apply":"قدّم الآن",
+        "hero.kicker":"ابتكار وتقنية بحرية",
+        "hero.h1":"خلّنا نبتكر البحر.",
+        "hero.sub":"ريفانا تك شركة سعودية متخصصة في بناء أنظمة وتطبيقات بحرية ذكية. نمكّن مُشغّلي الأساطيل والمراسي والأعمال البحرية من تشغيل أكثر أمانًا وكفاءة عبر الأتمتة، والتحليلات الذكية، وإدارة قائمة على البيانات.",
+        "hero.explore":"استعرض الخدمات",
+        "hero.who":"من نحن",
+        "hero.careers":"الوظائف",
+        "panel.title":"مصمم لعمليات بحرية حديثة",
+        "panel.badge1":"أتمتة",
+        "panel.badge2":"تحليلات بالذكاء الاصطناعي",
+        "panel.badge3":"SCADA + إنترنت الأشياء",
+        "panel.badge4":"ERP/CRM بحري",
+        "panel.badge5":"السلامة أولاً",
+        "panel.note":"الهوية البصرية تستخدم تدرج ريفانا (أزرق/سماوي/بنفسجي) على خلفية كحلية.",
+        "about.h2":"عن ريفانا",
+        "about.lead":"نجمع الخبرة البحرية مع التقنية المتقدمة لتحويل العمليات اليومية إلى إجراءات أذكى وأكثر أمانًا وكفاءة.",
+        "about.vision.h3":"الرؤية",
+        "about.vision.p":"أن نصبح المزوّد الرائد لحلول التقنية البحرية المبتكرة داخل المملكة وعالميًا.",
+        "about.mission.h3":"الرسالة",
+        "about.mission.p":"تقديم خدمات بحرية متكاملة مدفوعة بالتقنية لتعزيز السلامة والكفاءة ورضا العملاء.",
+        "about.values.h3":"قيمنا",
+        "about.values.li1":"<b>الابتكار</b> — نستخدم التقنية لفتح آفاق تشغيل بحري أذكى.",
+        "about.values.li2":"<b>التميّز</b> — نلتزم بمعايير عالية في الجودة والأداء والتسليم.",
+        "about.values.li3":"<b>السلامة</b> — الإنسان والعميل والبيئة البحرية في قلب كل عملية.",
+        "about.what.h3":"ماذا نفعل",
+        "about.what.li1":"حلول رقمية متكاملة للأساطيل والمراسي والأعمال البحرية.",
+        "about.what.li2":"مراقبة لحظية وأتمتة ولوحات تحكم وتحليلات.",
+        "about.what.li3":"رؤية تشغيلية أفضل وقرارات أدق عبر البيانات.",
+        "services.h2":"خدماتنا",
+        "services.lead":"من البحر إلى النظام — خدمات شاملة تمزج الخبرة البحرية بالتقنية المتقدمة.",
+        "services.s1.h3":"نظام إدارة الأسطول الذكي",
+        "services.s1.li1":"مراقبة لحظية للسفن والأصول لرفع كفاءة التشغيل.",
+        "services.s1.li2":"تتبع استهلاك الوقود وجدولة الصيانة الوقائية لخفض التكاليف.",
+        "services.s1.li3":"تنبيهات سلامة للسرعة والمسارات والحالات غير الطبيعية.",
+        "services.s1.li4":"تحكم ومراقبة عن بُعد عبر أنظمة رقمية (مثل SCADA) ولوحات مباشرة.",
+        "services.s1.li5":"تحليلات وتوصيات مدعومة بالذكاء الاصطناعي لتحسين الأداء.",
+        "services.s1.li6":"دعم الامتثال لمتطلبات الجودة والسلامة المحلية والدولية.",
+        "services.s2.h3":"إدارة المرسى الذكي",
+        "services.s2.li1":"تتبع توفر الأرصفة والإشغال لتقليل الازدحام.",
+        "services.s2.li2":"تسجيل رقمي، تصاريح إلكترونية، ومدفوعات رقمية.",
+        "services.s2.li3":"مراقبة الموارد لكل رصيف (ماء، كهرباء، وقود).",
+        "services.s2.li4":"تطبيقات للحجز والدفع والتنبيهات وطلبات الخدمات.",
+        "services.s2.li5":"قدرات بيئية (إدارة النفايات ومراقبة جودة المياه).",
+        "services.s2.li6":"أمن: حساسات، دمج كاميرات، تتبع GPS، وتحكم مركزي.",
+        "services.s3.h3":"تكامل SCADA وإنترنت الأشياء",
+        "services.s3.li1":"جمع بيانات لحظي من الحساسات والمعدات الميدانية.",
+        "services.s3.li2":"تشغيل عن بُعد: تشغيل/إيقاف الأنظمة من أي مكان عبر السحابة.",
+        "services.s3.li3":"تقليل الزيارات الميدانية وتسريع الاستجابة للحوادث.",
+        "services.s3.li4":"تحسين الطاقة والمياه والوقود لتقليل الهدر.",
+        "services.s3.li5":"أنظمة إنذار مبكر للسلامة (تسرب، سخونة، انقطاع طاقة).",
+        "services.s3.li6":"جاهز للتكامل مع ERP/CRM ولوحات موحدة.",
+        "services.s4.h3":"CRM / ERP بحري",
+        "services.s4.li1":"منصة موحدة تربط المشتريات والتشغيل والصيانة والمالية والموارد البشرية وبيانات الأسطول.",
+        "services.s4.li2":"تتبع رحلة العميل: حجوزات، فواتير، تفضيلات، سجل خدمات، رضا.",
+        "services.s4.li3":"أتمتة لتقليل العمل اليدوي وتحسين دقة البيانات.",
+        "services.s4.li4":"تتبع صيانة وقائية وإدارة مخزون قطع الغيار.",
+        "services.s4.li5":"شفافية مالية: تقارير لحظية، ميزانيات، مدفوعات إلكترونية، وربط بنكي.",
+        "market.h2":"السوق والنمو",
+        "market.lead":"موقعنا يؤهلنا لدعم منظومة الساحل والقطاع البحري المتسارعة بحلول رقمية أولاً.",
+        "market.opp.h3":"الفرص",
+        "market.opp.li1":"نمو الطلب على السياحة الساحلية والأنشطة البحرية والمشاريع الواجهة البحرية.",
+        "market.opp.li2":"ارتفاع الحاجة لتشغيل بحري آمن وفعّال ومتوافق.",
+        "market.opp.li3":"تحول رقمي متسارع للأساطيل والمراسي ومقدمي الخدمات البحرية.",
+        "market.value.h3":"قيمة مضافة للقطاع",
+        "market.value.li1":"رفع رضا العملاء عبر تواصل احترافي واستجابة أسرع.",
+        "market.value.li2":"استقطاب وتطوير وتدريب الكفاءات بشكل مستمر.",
+        "market.value.li3":"توسيع الخدمات الرقمية لقطاعات مجاورة خارج المجال البحري.",
+        "market.value.li4":"شراكات استراتيجية مع جهات حكومية وخاصة داعمة لرؤية 2030.",
+        "careers.h2":"الوظائف",
+        "careers.lead":"انضم لنا في تشكيل مستقبل التقنية البحرية. نبني فريقًا يقدّر الابتكار والتميّز والسلامة.",
+        "careers.job.h3":"مساعد/ة إداري/ة",
+        "careers.job.meta1":"دوام كامل",
+        "careers.job.meta2":"وظيفة شاغرة",
+        "careers.job.meta3":"الموقع: أبوظبي (حضوري)",
+        "careers.job.kr":"المهام الأساسية",
+        "careers.job.li1":"إدارة العمليات الإدارية اليومية.",
+        "careers.job.li2":"تنسيق الجداول والاجتماعات.",
+        "careers.job.li3":"التعامل مع البريد الإلكتروني والمستندات والتقارير.",
+        "careers.job.li4":"دعم الإدارة في مهام المكتب.",
+        "careers.job.li5":"حفظ الملفات والسجلات بطريقة منظمة.",
+        "careers.job.applybtn":"قدّم الآن",
+        "careers.job.goto":"اذهب لنموذج التقديم",
+        "careers.job.tip":"ملاحظة: بعد نشر الموقع تقدر تطبع الرابط أو QR وتضعه في إعلان إنستغرام.",
+        "apply.h3":"قدّم الآن عبر النموذج",
+        "apply.note":"يدعم هذا النموذج رفع الملفات. لتفعيل الاستقبال الصريح للطلبات ضع رابط الفورم المجاني في خانة ACTION_URL داخل HTML.",
+        "apply.fullName":"الاسم الكامل",
+        "apply.fullNamePh":"اكتب اسمك الكامل",
+        "apply.email":"البريد الإلكتروني",
+        "apply.emailPh":"name@example.com",
+        "apply.phone":"رقم الجوال",
+        "apply.phonePh":"+966 ...",
+        "apply.position":"الوظيفة المتقدم لها",
+        "apply.select":"اختر الوظيفة",
+        "apply.opt1":"مساعد/ة إداري/ة",
+        "apply.cv":"رفع السيرة الذاتية",
+        "apply.help":"الصيغ المقبولة: PDF, DOC, DOCX",
+        "apply.msg":"رسالة (اختياري)",
+        "apply.msgPh":"عرّفنا باختصار عن خبرتك…",
+        "apply.submit":"إرسال الطلب",
+        "apply.contact":"تواصل معنا",
+        "apply.route":"سيتم إرسال الطلبات إلى:",
+        "contact.h2":"التواصل",
+        "contact.lead":"للشراكات أو العروض أو الدعم — تواصل معنا في أي وقت.",
+        "contact.email.h3":"البريد",
+        "contact.email.note":"البريد الرئيسي للاستفسارات العامة والتوظيف.",
+        "contact.phone.h3":"الهاتف",
+        "contact.phone.note":"ساعات العمل (الخليج).",
+        "contact.web.h3":"الموقع",
+        "contact.web.note":"الموقع العام (هذه الصفحة).",
+        "contact.loc.h3":"الموقع",
+        "contact.loc.p":"أبوظبي، الإمارات",
+        "contact.loc.note":"الوظيفة المعروضة تتطلب حضورًا في أبوظبي.",
+        "footer.brand":"RIVANA",
+        "footer.tag":"ابتكار وتقنية بحرية",
+        "footer.rights":"ريفانا. جميع الحقوق محفوظة."
+      }
+    };
+
+    function getLangFromUrl(){
+      const url = new URL(window.location.href);
+      const q = (url.searchParams.get("lang") || "").toLowerCase();
+      return (q === "ar" || q === "en") ? q : null;
+    }
+
+    function setActive(lang){
+      document.getElementById("langAr").classList.toggle("active", lang === "ar");
+      document.getElementById("langEn").classList.toggle("active", lang === "en");
+    }
+
+    function applyLanguage(lang){
+      const dict = I18N[lang] || I18N.en;
+
+      // update html attributes
+      document.documentElement.lang = lang;
+      document.documentElement.dir = (lang === "ar") ? "rtl" : "ltr";
+
+      // update title tag text
+      document.querySelector('title').textContent = dict.title;
+
+      // update text nodes
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if(dict[key] !== undefined){
+          // allow HTML for list items that contain <b>
+          if(el.tagName === "LI" || el.innerHTML.includes("<b>")){
+            el.innerHTML = dict[key];
+          } else {
+            el.textContent = dict[key];
+          }
+        }
+      });
+
+      // update placeholders
+      document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if(dict[key] !== undefined) el.setAttribute("placeholder", dict[key]);
+      });
+
+      // save + url param
+      localStorage.setItem("site_lang", lang);
+      const url = new URL(window.location.href);
+      url.searchParams.set("lang", lang);
+      history.replaceState({}, "", url);
+
+      setActive(lang);
+    }
+
+    // init
+    const initial = getLangFromUrl() || localStorage.getItem("site_lang") || "en";
+    applyLanguage(initial);
+
+    // events
+    document.getElementById("langAr").addEventListener("click", () => applyLanguage("ar"));
+    document.getElementById("langEn").addEventListener("click", () => applyLanguage("en"));
+  </script>
+
+  <script src="assets/site.js"></script>
+</body>
+</html>
