@@ -272,34 +272,51 @@
             This form supports file upload. To activate submissions, paste your free form endpoint in the HTML (instructions included in README).
           </p>
 
-          <form action="ACTION_URL" method="POST" enctype="multipart/form-data">
-            <label for="fullName" data-i18n="apply.fullName">Full Name</label>
-            <input id="fullName" name="fullName" type="text" required placeholder="Your full name" data-i18n-placeholder="apply.fullNamePh"/>
+          <form class="apply-form"
+      action="https://formsubmit.co/info@rivana.com"
+      method="POST"
+      enctype="multipart/form-data">
 
-            <label for="email" data-i18n="apply.email">Email</label>
-            <input id="email" name="email" type="email" required placeholder="name@example.com" data-i18n-placeholder="apply.emailPh"/>
+  <!-- FormSubmit settings -->
+  <input type="hidden" name="_subject" value="New Job Application - Rivana" />
+  <input type="hidden" name="_template" value="table" />
+  <input type="hidden" name="_captcha" value="false" />
+  <input type="hidden" name="_next" value="https://rivana.pages.dev/#careers" />
 
-            <label for="phone" data-i18n="apply.phone">Phone Number</label>
-            <input id="phone" name="phone" type="tel" required placeholder="+971 ..." data-i18n-placeholder="apply.phonePh"/>
+  <div class="grid">
+    <div>
+      <label>Full Name</label>
+      <input type="text" name="Full Name" required />
+    </div>
 
-            <label for="position" data-i18n="apply.position">Position Applied For</label>
-            <select id="position" name="position" required>
-              <option value="" disabled selected data-i18n="apply.select">Select a position</option>
-              <option data-i18n="apply.opt1">Administrative Assistant</option>
-            </select>
+    <div>
+      <label>Email</label>
+      <input type="email" name="Email" required />
+    </div>
 
-            <label for="cv" data-i18n="apply.cv">Upload CV</label>
-            <input id="cv" name="cv" type="file" accept=".pdf,.doc,.docx" required />
-            <small class="help" data-i18n="apply.help">Accepted formats: PDF, DOC, DOCX</small>
+    <div>
+      <label>Phone</label>
+      <input type="tel" name="Phone" />
+    </div>
 
-            <label for="message" data-i18n="apply.msg">Message (Optional)</label>
-            <textarea id="message" name="message" placeholder="Tell us briefly about your experience." data-i18n-placeholder="apply.msgPh"></textarea>
+    <div>
+      <label>Position</label>
+      <input type="text" name="Position" value="Administrative Assistant" />
+    </div>
+  </div>
 
-            <div class="hero-actions" style="margin-top:14px">
-              <button class="btn primary" type="submit" data-i18n="apply.submit">Submit Application</button>
-              <a class="btn" href="#contact" data-scroll data-i18n="apply.contact">Contact Us</a>
-            </div>
-          </form>
+  <label>Message</label>
+  <textarea name="Message" rows="4"
+    placeholder="Briefly describe your experience..."></textarea>
+
+  <label>Upload CV (PDF / DOC / DOCX)</label>
+  <input type="file" name="attachment"
+         accept=".pdf,.doc,.docx" required />
+
+  <button class="btn primary" type="submit">
+    Submit Application
+  </button>
+</form>
 
           <p class="note" style="margin-top:12px">
             <span data-i18n="apply.route">Applications will be routed to:</span> <b>info@rivana.com</b>
