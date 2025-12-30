@@ -20,3 +20,14 @@
     });
   }
 })();
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+  const hero = document.querySelector(".hero");
+
+  if (hero) {
+    hero.style.setProperty(
+      "--parallaxY",
+      `${scrollY * 0.15}px`
+    );
+  }
+});
