@@ -422,3 +422,15 @@ body::after,
   background-image: none !important;
   content: none !important;
 }
+.hero { position: relative; }
+
+.wave{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
