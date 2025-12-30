@@ -265,3 +265,54 @@ hr.sep{
   position:relative;
   z-index:1;
 }
+/* =========================
+   Mobile Responsive Fixes
+========================= */
+@media (max-width: 768px){
+
+  /* Navbar */
+  .nav{
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-inner{
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .brand img{
+    width: 84px;
+    height: 84px;
+  }
+
+  /* Hero text */
+  .hero h1{
+    font-size: 34px;
+    line-height: 1.1;
+    text-align: center;
+  }
+
+  .hero .lead{
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .hero .cta{
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* Sections layout */
+  .grid{
+    grid-template-columns: 1fr !important;
+    gap: 16px;
+  }
+
+  /* Watermark logo */
+  .hero::before{
+    width: 280px;
+    height: 280px;
+    opacity: 0.05;
+  }
+}
