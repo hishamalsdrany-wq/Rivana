@@ -237,13 +237,15 @@ hr.sep{
 
 .hero::before{
   content:"";
-  position:absolute;
+  position:fixed;
   inset:0;
   background:url("assets/rivana-logo.jpeg") no-repeat center;
-  background-size:520px;
-  opacity:0.07;
+  background-size:650px;   /* حجم الشعار */
+  opacity:0.08;            /* شفافية */
   z-index:0;
   pointer-events:none;
+  transform:translateY(0);
+  will-change:transform;
 }
 
 .hero > *{
