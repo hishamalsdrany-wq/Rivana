@@ -235,17 +235,30 @@ hr.sep{
   overflow:hidden;
 }
 
+.hero{
+  position: relative;
+  overflow: hidden;
+}
+
 .hero::before{
   content:"";
-  position:fixed;
-  inset:0;
-  background:url("assets/rivana-logo.jpeg") no-repeat center;
-  background-size:650px;   /* حجم الشعار */
-  opacity:0.08;            /* شفافية */
-  z-index:0;
-  pointer-events:none;
-  transform:translateY(var(--parallaxY, 0));
-  will-change:transform;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 700px;          /* حجم الشعار */
+  height: 700px;
+  transform: translate(-50%, -50%);
+  background: url("assets/rivana-logo.jpeg") no-repeat center;
+  background-size: contain;
+  opacity: 0.08;         /* شفافية */
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* نخلي محتوى الهيرو فوق الشعار */
+.hero > *{
+  position: relative;
+  z-index: 1;
 }
 
 .hero > *{
