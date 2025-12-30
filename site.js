@@ -20,7 +20,6 @@
     });
   }
 })();
-window.addEventListener("scroll", () => {
   const scrollY = window.scrollY;
   const hero = document.querySelector(".hero");
 
