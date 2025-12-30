@@ -35,7 +35,7 @@ a{color:inherit}
 }
 .nav-inner{display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:16px}
 .brand{display:flex; align-items:center; gap:12px; text-decoration:none}
-.brand img{width:72px; height:72px; border-radius:12px; object-fit:cover; box-shadow:0 12px 30px rgba(0,0,0,.35)}
+.brand img{width:96px; height:96px; border-radius:12px; object-fit:cover; box-shadow:0 12px 30px rgba(0,0,0,.35)}
 .brand span{font-weight:800; letter-spacing:.8px}
 .menu{display:flex; gap:14px; flex-wrap:wrap}
 .menu a{
