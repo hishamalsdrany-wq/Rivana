@@ -169,7 +169,7 @@ h1{
   border-radius: 999px;
 }
 .wave{
-  position:absolute; left:0; right:0; bottom:-1px;
+  position:absolute; left:0; right:0; bottom:-40px;
   height:160px;
   opacity:.85;
   filter: drop-shadow(0 20px 40px rgba(0,0,0,.45));
