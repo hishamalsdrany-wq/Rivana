@@ -415,3 +415,10 @@ header, main, .container, .nav {
   position: relative; 
   z-index: 1; 
 }
+body::before,
+body::after,
+.hero::before,
+.hero::after {
+  background-image: none !important;
+  content: none !important;
+}
