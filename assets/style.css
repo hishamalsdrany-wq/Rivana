@@ -385,3 +385,33 @@ hr.sep{
   font-size: 26px;
   opacity: .9;
 }
+/* ===== Watermark (Logo + Signature) ===== */
+.bg-watermark{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;            /* خلف المحتوى */
+  pointer-events: none;  /* لا يمنع الضغط */
+  text-align: center;
+  opacity: .12;
+}
+
+.bg-watermark img{
+  width: 520px;          /* كبّر/صغّر هنا */
+  height: auto;
+  display: block;
+}
+
+.bg-watermark-sign{
+  margin-top: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 26px;
+  opacity: .9;
+}
+
+/* خَلّي المحتوى فوق الووترمارك */
+header, main, .container, .nav { 
+  position: relative; 
+  z-index: 1; 
+}
